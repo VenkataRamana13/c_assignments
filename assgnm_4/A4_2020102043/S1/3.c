@@ -16,7 +16,7 @@ int main(){
         x = (double)((rand() % (2*DIV)) - DIV)/ DIV;       //gives a random point between -1 and 1
         y = (double)((rand() % (2*DIV))- DIV)/ DIV;       //gives a random point between -1 and 1
 
-        if((x*x + y*y) <= 1) p++; 
+        if((x*x + y*y) < 1) p++; 
 
         q++; 
     }
