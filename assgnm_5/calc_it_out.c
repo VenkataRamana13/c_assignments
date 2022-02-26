@@ -1,15 +1,17 @@
 #include <stdio.h>
+#include <stdlib.h>
+
 long long MOD = 1e9 + 7; 
 
 int main(){
     int N, M; scanf("%d%d", &N, &M); 
-    int a[N][M]; 
-    for (int *p = (int *)a; p <= &a[N - 1][M - 1]; p++){
+    int (*a)[M] = malloc(sizeof(int[N][M]));
+    for (int *p = &a[0][0]; p <= &a[N - 1][M - 1]; p++){
         scanf ("%d", p); 
         }
     int Q; scanf("%d", &Q); 
-    int b[Q][4]; 
-    for (int *p = (int *)b; p <= &b[Q-1][3]; p++){
+    int (*b)[4] = malloc(sizeof(int[Q][4])); 
+    for (int *p = &b[0][0]; p <= &b[Q-1][3]; p++){
         scanf("%d", p); 
     }
     for (int i = 0; i < Q; i++){
@@ -21,4 +23,6 @@ int main(){
         }
         printf("%lld\n", product);
     }
+    free(a); 
+    free(b); 
 }
