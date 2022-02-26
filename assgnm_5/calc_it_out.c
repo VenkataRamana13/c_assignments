@@ -16,7 +16,7 @@ int main(){
         long long product = 1; 
         for (int x = b[i][0]; x <= b[i][2]; x++){
             for (int y = b[i][1]; y <= b[i][3]; y++){
-                product = (long long)(product*a[y][x]%MOD);
+                product = ((product%MODO)*(a[y][x]%MOD))%MOD;
             }
         }
         printf("%lld\n", product);
