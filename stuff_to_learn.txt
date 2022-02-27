@@ -1,0 +1,11 @@
+computing determinant, gaussian elimination, etc math stuff
+malloc
+low level programming
+linked lists
+sorting - insertion, bubble, merge, quick, using library
+file handling and makefiles
+debugging - valgrind
+stacks
+DP
+binary exponentation, matrix exponentiation and prefix sum 
+
