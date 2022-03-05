@@ -17,19 +17,16 @@ int main(){
     for (ll *p = &b[0][0]; p <= &b[Q-1][3]; p++){
         scanf("%lld", p); 
     }
-<<<<<<< HEAD
     for (int i = 0; i < Q; i++){
         long long product = 1; 
         for (int x = b[i][0]; x <= b[i][2]; x++){
             for (int y = b[i][1]; y <= b[i][3]; y++){
                 product = (long long) (product%MOD)*(a[y][x]%MOD)%MOD;
-=======
     for (ll i = 0; i < Q; i++){
         ll product = 1; 
         for (ll x = b[i][0]; x <= b[i][2]; x++){
             for (ll y = b[i][1]; y <= b[i][3]; y++){
                 product = prod(product, a[y][x]); 
->>>>>>> 5def00895f2cf42e220e6aae84107cf774e9c94f
             }
         }
         printf("%lld\n", product);
